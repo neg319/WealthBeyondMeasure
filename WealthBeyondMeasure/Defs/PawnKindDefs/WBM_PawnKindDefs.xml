@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <PawnKindDef>
+    <defName>WBM_Banker</defName>
+    <label>banker</label>
+    <race>Human</race>
+    <trader>WBM_BankerTrader</trader>
+    <combatPower>40</combatPower>
+    <apparelMoney>1200</apparelMoney>
+    <weaponMoney>0</weaponMoney>
+    <gearHealthRange>0.95~1.0</gearHealthRange>
+    <backstoryCategories>
+      <li>Civil</li>
+    </backstoryCategories>
+  </PawnKindDef>
+
+  <PawnKindDef>
+    <defName>WBM_BankerGuard</defName>
+    <label>banker guard</label>
+    <race>Human</race>
+    <combatPower>180</combatPower>
+    <apparelMoney>2600</apparelMoney>
+    <weaponMoney>0</weaponMoney>
+    <gearHealthRange>0.98~1.0</gearHealthRange>
+    <backstoryCategories>
+      <li>Civil</li>
+    </backstoryCategories>
+  </PawnKindDef>
+</Defs>

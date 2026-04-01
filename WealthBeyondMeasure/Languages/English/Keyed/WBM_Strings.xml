@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<WBM_BankVaultInspect>This vault only accepts colony currency and is used by colonists to collect their wages.</WBM_BankVaultInspect>
+  <WBM_BankVaultCurrentSilver>Bank funds on hand: {0}</WBM_BankVaultCurrentSilver>
+  <WBM_BankVaultProjectedPayout>Projected total payday payout: {0}</WBM_BankVaultProjectedPayout>
+  <WBM_BankVaultNextPayday>Next payday: {0} in {1} day(s)</WBM_BankVaultNextPayday>
+  <WBM_OverlayTitle>Wealth Beyond Measure</WBM_OverlayTitle>
+  <WBM_OverlayWallet>Effective household funds: {0}</WBM_OverlayWallet>
+  <WBM_OverlayCommunityAssistance>Community Assistance rate: {0}</WBM_OverlayCommunityAssistance>
+  <WBM_OverlayCurrentGross>Current earned: {0}</WBM_OverlayCurrentGross>
+  <WBM_OverlayCurrentExpenses>Current costs: {0}</WBM_OverlayCurrentExpenses>
+  <WBM_OverlayCurrentNet>Current net: {0}</WBM_OverlayCurrentNet>
+  <WBM_OverlayLifetime>Lifetime earned/lost: {0} / {1}</WBM_OverlayLifetime>
+  <WBM_OverlayRank>Wealth rank: {0}</WBM_OverlayRank>
+  <WBM_OverlaySocialStanding>Social standing: {0} opinion from wealth</WBM_OverlaySocialStanding>
+  <WBM_OverlayLifestyle>Lifestyle fit: {0}</WBM_OverlayLifestyle>
+  <WBM_OverlayPayday>Payday: {0}</WBM_OverlayPayday>
+  <WBM_OverlayWorkBreakdown>This pay period work time</WBM_OverlayWorkBreakdown>
+  <WBM_InspectWallet>Effective household funds: {0}</WBM_InspectWallet>
+  <WBM_InspectCommunityAssistance>Community Assistance rate: {0}</WBM_InspectCommunityAssistance>
+  <WBM_InspectCurrentGross>Current earned: {0}</WBM_InspectCurrentGross>
+  <WBM_InspectCurrentExpenses>Current costs: {0}</WBM_InspectCurrentExpenses>
+  <WBM_InspectCurrentNet>Current net: {0}</WBM_InspectCurrentNet>
+  <WBM_InspectRank>Wealth rank: {0}</WBM_InspectRank>
+  <WBM_InspectSocialStanding>Social standing: {0} opinion from wealth</WBM_InspectSocialStanding>
+  <WBM_InspectLifestyle>Lifestyle fit: {0}</WBM_InspectLifestyle>
+  <WBM_InspectPayday>Payday: {0}</WBM_InspectPayday>
+  <WBM_InspectWorkBreakdown>Work time by job</WBM_InspectWorkBreakdown>
+  <WBM_NoPaidWorkYet>No paid work logged yet this pay period.</WBM_NoPaidWorkYet>
+  <WBM_Lifestyle_Excellent>Perfectly matched</WBM_Lifestyle_Excellent>
+  <WBM_Lifestyle_Good>Matches status well</WBM_Lifestyle_Good>
+  <WBM_Lifestyle_Neutral>Mostly neutral</WBM_Lifestyle_Neutral>
+  <WBM_Lifestyle_Bad>Poorly matched</WBM_Lifestyle_Bad>
+  <WBM_Lifestyle_Poor>Very mismatched</WBM_Lifestyle_Poor>
+  <WBM_PaydayMessage>Payday has arrived. Colonists with positive net pay will head to a Bank Vault to collect their currency. They will also judge their clothing, food, weapons, and comforts against their wealth.</WBM_PaydayMessage>
+  <WBM_Settings_GeneralHeader>General</WBM_Settings_GeneralHeader>
+  <WBM_Settings_CurrencyName>Currency display and appearance</WBM_Settings_CurrencyName>
+  <WBM_Settings_CurrencyDescription>Set colony currency to {0}. The base silver item is renamed and its appearance changes to match.</WBM_Settings_CurrencyDescription>
+  <WBM_Settings_PaydayDay>Weekly payday</WBM_Settings_PaydayDay>
+  <WBM_Settings_ShowOverlay>Show selected pawn wealth overlay</WBM_Settings_ShowOverlay>
+  <WBM_Settings_InfiniteBank>Infinite bank funds</WBM_Settings_InfiniteBank>
+  <WBM_Settings_WorkRatesHeader>Currency per in game hour by work type</WBM_Settings_WorkRatesHeader>
+  <WBM_Settings_WorkRatesDescription>Set decimal currency per in game hour for every work type. Only active working time is counted, not walking, breaks, or idle time.</WBM_Settings_WorkRatesDescription>
+  <WBM_Settings_ItemCostsHeader>Food and medicine costs</WBM_Settings_ItemCostsHeader>
+  <WBM_Settings_ItemCostsDescription>These are true values before Community Assistance. Poor pawns pay less, rich pawns pay more, shared household wealth affects the discount, and pawns can go into debt if they cannot afford a consumable.</WBM_Settings_ItemCostsDescription>
+  <WBM_Currency_Silver>Silver</WBM_Currency_Silver>
+  <WBM_Currency_Dollars>Dollars</WBM_Currency_Dollars>
+  <WBM_Currency_Gold>Gold</WBM_Currency_Gold>
+  <WBM_Currency_Credits>Credits</WBM_Currency_Credits>
+  <WBM_Currency_Caps>Caps</WBM_Currency_Caps>
+  <WBM_Currency_Septims>Septims</WBM_Currency_Septims>
+  <WBM_Currency_Drakes>Drakes</WBM_Currency_Drakes>
+  <WBM_Currency_Cats>Cats</WBM_Currency_Cats>
+  <WBM_CurrencyDescription>This currency stack currently represents {0}.</WBM_CurrencyDescription>
+  <WBM_Day_Monday>Monday</WBM_Day_Monday>
+  <WBM_Day_Tuesday>Tuesday</WBM_Day_Tuesday>
+  <WBM_Day_Wednesday>Wednesday</WBM_Day_Wednesday>
+  <WBM_Day_Thursday>Thursday</WBM_Day_Thursday>
+  <WBM_Day_Friday>Friday</WBM_Day_Friday>
+  <WBM_Day_Saturday>Saturday</WBM_Day_Saturday>
+  <WBM_Day_Sunday>Sunday</WBM_Day_Sunday>
+  <WBM_Rank_0>Poor</WBM_Rank_0>
+  <WBM_Rank_1>Meager</WBM_Rank_1>
+  <WBM_Rank_2>Modest</WBM_Rank_2>
+  <WBM_Rank_3>Comfortable</WBM_Rank_3>
+  <WBM_Rank_4>Well Off</WBM_Rank_4>
+  <WBM_Rank_5>Prosperous</WBM_Rank_5>
+  <WBM_Rank_6>Affluent</WBM_Rank_6>
+  <WBM_Rank_7>Wealthy</WBM_Rank_7>
+  <WBM_Rank_8>Filthy Rich</WBM_Rank_8>
+  <WBM_Rank_9>Extremely Filthy Rich</WBM_Rank_9>
+  <WBM_BankVaultBankerReady>Banker status: ready to request</WBM_BankVaultBankerReady>
+  <WBM_BankVaultBankerActive>Banker status: on site for about {0} more in game hour(s)</WBM_BankVaultBankerActive>
+  <WBM_BankVaultBankerCooldown>Banker status: available again in about {0} in game hour(s)</WBM_BankVaultBankerCooldown>
+  <WBM_RequestBankerLabel>Request Banker</WBM_RequestBankerLabel>
+  <WBM_RequestBankerDescription>Send for a banker who visits like a trader, stays near the Bank Vault for about 12 in game hours, buys nearly anything, and arrives with a heavily armored expert marksman guard who stays friendly unless the banker or guard is attacked.</WBM_RequestBankerDescription>
+  <WBM_BankerUnavailableNoMap>No active map was found for this bank.</WBM_BankerUnavailableNoMap>
+  <WBM_BankerUnavailableNoBank>You need at least one Bank Vault before you can request a banker.</WBM_BankerUnavailableNoBank>
+  <WBM_BankerUnavailableActive>A banker is already visiting this settlement.</WBM_BankerUnavailableActive>
+  <WBM_BankerUnavailableCooldown>The banker is on cooldown for about {0} more in game hour(s).</WBM_BankerUnavailableCooldown>
+  <WBM_BankerRequested>The banker is on the way and will visit your Bank Vault for about 12 in game hours with a heavily armored guard at his side.</WBM_BankerRequested>
+  <WBM_BankerSpawnFailed>Could not spawn the banker. Check that your map has a reachable edge and a valid Bank Vault.</WBM_BankerSpawnFailed>
+  <WBM_BankerDeparted>The banker and his guard have wrapped up business and left the settlement.</WBM_BankerDeparted>
+  <WBM_OnlyOneBankVault>Only one Bank Vault can be placed on a map at a time.</WBM_OnlyOneBankVault>
+</LanguageData>

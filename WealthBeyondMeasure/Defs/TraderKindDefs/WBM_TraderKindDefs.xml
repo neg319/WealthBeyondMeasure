@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <TraderKindDef>
+    <defName>WBM_BankerTrader</defName>
+    <label>banker</label>
+    <commonality>1.0</commonality>
+    <orbital>false</orbital>
+    <hideThingsNotWillingToTrade>false</hideThingsNotWillingToTrade>
+    <stockGenerators />
+  </TraderKindDef>
+</Defs>

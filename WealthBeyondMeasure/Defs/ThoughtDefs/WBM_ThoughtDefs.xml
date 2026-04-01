@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThoughtDef>
+    <defName>WBM_GotPaidThought</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <workerClass>ThoughtWorker_Null</workerClass>
+    <durationDays>1.5</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>got paid</label>
+        <description>This pawn brought home silver on payday.</description>
+        <baseMoodEffect>6</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>WBM_LostMoneyThought</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <workerClass>ThoughtWorker_Null</workerClass>
+    <durationDays>1.5</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>lost money</label>
+        <description>This pawn had to pay for food, medicine, and personal costs on payday.</description>
+        <baseMoodEffect>-6</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>WBM_WealthLifestyleThought</defName>
+    <workerClass>WealthBeyondMeasure.ThoughtWorker_WBM_WealthLifestyle</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>lifestyle feels wrong</label>
+        <description>This pawn's clothes, gear, or comforts do not fit their sense of wealth.</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li>
+      <li>
+        <label>lifestyle is mismatched</label>
+        <description>This pawn's clothes, gear, or comforts do not quite fit their status.</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+      <li>
+        <label>lifestyle fits status</label>
+        <description>This pawn feels their clothes, gear, and comforts suit their status.</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+      <li>
+        <label>living exactly right</label>
+        <description>This pawn feels perfectly outfitted for their place in life.</description>
+        <baseMoodEffect>8</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>WBM_AteStatusMealThought</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <workerClass>ThoughtWorker_Null</workerClass>
+    <durationDays>0.8</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>ate a fitting meal</label>
+        <description>This meal suited the pawn's expectations for their wealth.</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>WBM_AteBadStatusMealThought</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <workerClass>ThoughtWorker_Null</workerClass>
+    <durationDays>0.8</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>ate an unfitting meal</label>
+        <description>This meal did not fit the pawn's expectations for their wealth.</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

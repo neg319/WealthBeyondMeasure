@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <WorkGiverDef>
+    <defName>WBM_CollectPaycheck</defName>
+    <label>collect paycheck</label>
+    <giverClass>WealthBeyondMeasure.WorkGiver_CollectPaycheck</giverClass>
+    <workType>Hauling</workType>
+    <verb>collect paycheck</verb>
+    <gerund>collecting paycheck</gerund>
+    <priorityInType>250</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+      <li>Moving</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+</Defs>

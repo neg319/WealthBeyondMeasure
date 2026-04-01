@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Wealth Beyond Measure</name>
+  <author>Johnny Berry / Vyberware</author>
+  <packageId>vyberware.wealthbeyondmeasure</packageId>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <modDependencies>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases</downloadUrl>
+    </li>
+  </modDependencies>
+  <description>Wealth Beyond Measure is a vibe coded colony economy mod for RimWorld 1.6. Colonists earn wages based on the actual in game hours they spend working, get paid on a weekly payday from a single Bank Vault, carry their own funds, and pay personal costs for food and medicine with Community Assistance discounts based on wealth. Money can go negative, spouses share household wealth, children inherit household status until adulthood, and wealth changes what colonists want to wear, eat, wield, and sleep in. The mod also adds wealth based mood and social reactions, High Maintenance and Frugal traits, a banker visitor who buys nearly anything, multiple currency names and appearances, and a free, movable, fireproof Bank Vault that acts as the colony treasury. When called, the banker now arrives with a heavily armored guard carrying a marksman weapon who stays friendly unless the banker or guard is attacked.</description>
+</ModMetaData>

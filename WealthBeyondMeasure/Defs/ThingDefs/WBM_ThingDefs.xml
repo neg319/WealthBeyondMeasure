@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BuildingBase">
+    <defName>WBM_BankVault</defName>
+    <label>bank vault</label>
+    <description>A large black treasury safe that holds the colony currency. Colonists collect their pay from this vault on payday, money spent through Wealth Beyond Measure is deposited back into it, and its inspect pane tracks the next payday and projected payout.</description>
+    <thingClass>WealthBeyondMeasure.Building_BankVault</thingClass>
+    <category>Building</category>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>Building</altitudeLayer>
+    <useHitPoints>false</useHitPoints>
+    <passability>PassThroughOnly</passability>
+    <pathCost>30</pathCost>
+    <fillPercent>1.0</fillPercent>
+    <size>(2,2)</size>
+    <drawerType>MapMeshOnly</drawerType>
+    <rotatable>true</rotatable>
+    <surfaceType>Item</surfaceType>
+    <graphicData>
+      <texPath>Things/Buildings/BankVault</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <uiIconPath>Things/Buildings/BankVault</uiIconPath>
+    <statBases>
+      <WorkToBuild>1</WorkToBuild>
+      <Mass>75</Mass>
+      <Flammability>0</Flammability>
+      <MarketValue>0</MarketValue>
+      <Beauty>-2</Beauty>
+    </statBases>
+    <costList />
+    <building>
+      <isEdifice>false</isEdifice>
+      <ai_combatDangerous>false</ai_combatDangerous>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+    </building>
+    <designationCategory>Storage</designationCategory>
+    <deconstructible>false</deconstructible>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <placeWorkers>
+      <li>WealthBeyondMeasure.PlaceWorker_OnlyOneBankVault</li>
+    </placeWorkers>
+    <comps>
+      <li Class="CompProperties_Storage">
+        <storageSettings>
+          <priority>Critical</priority>
+          <filter>
+            <thingDefs>
+              <li>Silver</li>
+            </thingDefs>
+          </filter>
+        </storageSettings>
+      </li>
+    </comps>
+  </ThingDef>
+</Defs>

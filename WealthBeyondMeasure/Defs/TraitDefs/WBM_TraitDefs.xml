@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <TraitDef>
+    <defName>WBM_HighMaintenance</defName>
+    <commonality>0.5</commonality>
+    <degreeDatas>
+      <li>
+        <label>high maintenance</label>
+        <description>This pawn has expensive taste. They want finer clothes, better meals, better gear, and better comforts, and they dislike living below those standards.</description>
+      </li>
+    </degreeDatas>
+    <conflictingTraits>
+      <li>WBM_Frugal</li>
+    </conflictingTraits>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>WBM_Frugal</defName>
+    <commonality>0.7</commonality>
+    <degreeDatas>
+      <li>
+        <label>frugal</label>
+        <description>This pawn is comfortable living modestly. They are content with rougher clothes, cheaper meals, worn gear, and simpler comforts even when better options are available.</description>
+      </li>
+    </degreeDatas>
+    <conflictingTraits>
+      <li>WBM_HighMaintenance</li>
+    </conflictingTraits>
+  </TraitDef>
+</Defs>

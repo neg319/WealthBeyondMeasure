@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <JobDef>
+    <defName>WBM_CollectPaycheck</defName>
+    <driverClass>WealthBeyondMeasure.JobDriver_CollectPaycheck</driverClass>
+    <reportString>collecting paycheck.</reportString>
+    <casualInterruptible>false</casualInterruptible>
+    <checkOverrideOnExpire>true</checkOverrideOnExpire>
+    <playerInterruptible>true</playerInterruptible>
+    <alwaysShowWeapon>false</alwaysShowWeapon>
+  </JobDef>
+</Defs>
