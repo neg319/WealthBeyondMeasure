@@ -2,7 +2,7 @@
 
 A vibe coded RimWorld 1.6 colony economy mod by Johnny Berry / Vyberware.
 
-## v1.14.8
+## v1.14.10
 
 - updated the currency art with the new player supplied textures for Silver, Dollars, Gold, Caps, Septims, Drakes, and Cats
 - updated the Credits texture with the corrected image
@@ -59,7 +59,7 @@ This repository is set up to build on GitHub Actions and package a clean RimWorl
 - builds the DLL on pushes, pull requests, and manual runs
 - packages a release ready mod zip that excludes source files and build only files
 - uploads the finished zip as a workflow artifact
-- creates a GitHub release automatically when you push a tag like `v1.14.8`
+- creates a GitHub release automatically when you push a tag like `v1.14.10`
 
 ### RimWorld references
 
@@ -87,7 +87,7 @@ Either add one secret named `RW_MANAGED_ZIP_B64` containing a base64 encoded zip
 
 The workflow packages a zip named like this:
 
-`WealthBeyondMeasure-v1.14.8.zip`
+`WealthBeyondMeasure-v1.14.10.zip`
 
 That zip includes the playable mod folder only:
 - `About/`
