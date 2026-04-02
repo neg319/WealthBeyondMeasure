@@ -35,14 +35,13 @@
       <ai_combatDangerous>false</ai_combatDangerous>
       <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
     </building>
-    <designationCategory>Storage</designationCategory>
-    <deconstructible>false</deconstructible>
+    <designationCategory>Misc</designationCategory>
     <minifiedDef>MinifiedThing</minifiedDef>
     <placeWorkers>
       <li>WealthBeyondMeasure.PlaceWorker_OnlyOneBankVault</li>
     </placeWorkers>
     <comps>
-      <li Class="CompProperties_Storage">
+      <li Class="Verse.CompProperties_Storage">
         <storageSettings>
           <priority>Critical</priority>
           <filter>

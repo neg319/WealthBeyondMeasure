@@ -150,26 +150,56 @@ namespace WealthBeyondMeasure
     {
         private static readonly FieldInfo PawnField = AccessTools.Field(typeof(Pawn_InventoryTracker), "pawn");
 
-        public static void Prefix(Pawn_InventoryTracker __instance, Thing item, ref bool __state)
+        public static void Prefix(Pawn_InventoryTracker __instance, Thing item, ref int __state)
         {
+            __state = -1;
             Pawn pawn = PawnField?.GetValue(__instance) as Pawn;
-            __state = WageUtility.ShouldChargeForConsumableInventoryTake(pawn, item);
+            if (!WageUtility.ShouldChargeForConsumableInventoryTake(pawn, item) || pawn?.inventory?.innerContainer == null || item?.def == null)
+            {
+                return;
+            }
+
+            int existingCount = 0;
+            for (int i = 0; i < pawn.inventory.innerContainer.Count; i++)
+            {
+                Thing held = pawn.inventory.innerContainer[i];
+                if (held?.def == item.def)
+                {
+                    existingCount += held.stackCount;
+                }
+            }
+
+            __state = existingCount;
         }
 
-        public static void Postfix(Pawn_InventoryTracker __instance, Thing item, bool __result, bool __state)
+        public static void Postfix(Pawn_InventoryTracker __instance, Thing item, int __state)
         {
-            if (!__result || !__state || item?.def == null || WealthGameComponent.Instance == null)
+            if (__state < 0 || item?.def == null || WealthGameComponent.Instance == null)
             {
                 return;
             }
 
             Pawn pawn = PawnField?.GetValue(__instance) as Pawn;
-            if (!WageUtility.IsPawnEligible(pawn))
+            if (!WageUtility.IsPawnEligible(pawn) || pawn?.inventory?.innerContainer == null)
             {
                 return;
             }
 
-            WealthGameComponent.Instance.RegisterConsumableTakenToInventory(pawn, item);
+            int currentCount = 0;
+            for (int i = 0; i < pawn.inventory.innerContainer.Count; i++)
+            {
+                Thing held = pawn.inventory.innerContainer[i];
+                if (held?.def == item.def)
+                {
+                    currentCount += held.stackCount;
+                }
+            }
+
+            int addedCount = currentCount - __state;
+            if (addedCount > 0)
+            {
+                WealthGameComponent.Instance.RegisterConsumableTakenToInventory(pawn, item.def, addedCount);
+            }
         }
     }
 

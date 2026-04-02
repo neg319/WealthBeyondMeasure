@@ -4,11 +4,12 @@
     <defName>WBM_Banker</defName>
     <label>banker</label>
     <race>Human</race>
-    <trader>WBM_BankerTrader</trader>
     <combatPower>40</combatPower>
     <apparelMoney>1200</apparelMoney>
     <weaponMoney>0</weaponMoney>
     <gearHealthRange>0.95~1.0</gearHealthRange>
+    <initialResistanceRange>0.2~0.6</initialResistanceRange>
+    <initialWillRange>0.2~0.6</initialWillRange>
     <backstoryCategories>
       <li>Civil</li>
     </backstoryCategories>
@@ -22,6 +23,8 @@
     <apparelMoney>2600</apparelMoney>
     <weaponMoney>0</weaponMoney>
     <gearHealthRange>0.98~1.0</gearHealthRange>
+    <initialResistanceRange>0.4~0.9</initialResistanceRange>
+    <initialWillRange>0.4~0.9</initialWillRange>
     <backstoryCategories>
       <li>Civil</li>
     </backstoryCategories>

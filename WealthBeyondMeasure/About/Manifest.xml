@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Manifest>
   <identifier>vyberware.wealthbeyondmeasure</identifier>
-  <version>1.14.7</version>
+  <version>1.14.8</version>
   <supportedVersions>
     <li>1.6</li>
   </supportedVersions>

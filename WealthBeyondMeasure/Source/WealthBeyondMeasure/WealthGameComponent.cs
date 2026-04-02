@@ -421,6 +421,22 @@ namespace WealthBeyondMeasure
             AddExpense(pawn, totalCost, consumable.def.defName, consumable.stackCount);
         }
 
+        public void RegisterConsumableTakenToInventory(Pawn pawn, ThingDef thingDef, int count)
+        {
+            if (pawn == null || thingDef == null || count <= 0)
+            {
+                return;
+            }
+
+            float totalCost = GetAdjustedConsumableCost(pawn, thingDef, count);
+            if (totalCost <= 0f)
+            {
+                return;
+            }
+
+            AddExpense(pawn, totalCost, thingDef.defName, count);
+        }
+
         public void RegisterConsumableDirectUse(Pawn pawn, ThingDef thingDef, int count = 1)
         {
             if (pawn == null || thingDef == null || count <= 0)

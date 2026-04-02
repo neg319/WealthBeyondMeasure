@@ -6,7 +6,7 @@ This repo is set up to:
 - build the DLL with GitHub Actions
 - package a clean mod zip automatically
 - upload the packaged mod as a workflow artifact
-- create a GitHub release zip automatically when you push a tag like `v1.14.6`
+- create a GitHub release zip automatically when you push a tag like `v1.14.8`
 
 The playable mod content lives in `WealthBeyondMeasure/`.
 

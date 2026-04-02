@@ -123,7 +123,7 @@ namespace WealthBeyondMeasure
 
         public static void ApplyCurrencyPresentation()
         {
-            ThingDef currencyDef = ThingDefOf.Silver;
+            ThingDef currencyDef = DefDatabase<ThingDef>.GetNamedSilentFail("Silver");
             if (currencyDef == null)
             {
                 return;
@@ -169,4 +169,14 @@ namespace WealthBeyondMeasure
             }
         }
     }
+
+    [StaticConstructorOnStartup]
+    public static class CurrencyPresentationBootstrap
+    {
+        static CurrencyPresentationBootstrap()
+        {
+            LongEventHandler.ExecuteWhenFinished(CurrencyUtility.ApplyCurrencyPresentation);
+        }
+    }
+
 }

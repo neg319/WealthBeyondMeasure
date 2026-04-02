@@ -18,7 +18,6 @@ namespace WealthBeyondMeasure
         {
             Settings = GetSettings<WealthSettings>();
             Settings.EnsureDefaultsLoaded();
-            CurrencyUtility.ApplyCurrencyPresentation();
         }
 
         public override string SettingsCategory()
@@ -97,8 +96,7 @@ namespace WealthBeyondMeasure
                     options.Add(new FloatMenuOption(CurrencyUtility.GetOptionLabel(capture), delegate
                     {
                         Settings.currencyStyleIndex = capture;
-                        CurrencyUtility.ApplyCurrencyPresentation();
-                    }));
+                                }));
                 }
 
                 Find.WindowStack.Add(new FloatMenu(options));

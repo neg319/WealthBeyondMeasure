@@ -5,7 +5,6 @@
     <driverClass>WealthBeyondMeasure.JobDriver_CollectPaycheck</driverClass>
     <reportString>collecting paycheck.</reportString>
     <casualInterruptible>false</casualInterruptible>
-    <checkOverrideOnExpire>true</checkOverrideOnExpire>
     <playerInterruptible>true</playerInterruptible>
     <alwaysShowWeapon>false</alwaysShowWeapon>
   </JobDef>
