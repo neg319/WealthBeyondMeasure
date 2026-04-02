@@ -5,6 +5,7 @@ using System.Reflection;
 using RimWorld;
 using Verse;
 using Verse.AI;
+using Verse.AI.Group;
 
 namespace WealthBeyondMeasure
 {
@@ -20,7 +21,7 @@ namespace WealthBeyondMeasure
 
         public static bool IsBankerTrader(Pawn pawn)
         {
-            return pawn?.kindDef?.trader != null && pawn.kindDef.trader.defName == BankerTraderKindDefName;
+            return pawn?.kindDef != null && string.Equals(pawn.kindDef.defName, BankerKindDefName, StringComparison.Ordinal);
         }
 
         public static void DressAsBanker(Pawn pawn)

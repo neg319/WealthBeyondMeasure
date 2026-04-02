@@ -297,11 +297,6 @@ namespace WealthBeyondMeasure
                     continue;
                 }
 
-                if (def.workerClass == null)
-                {
-                    continue;
-                }
-
                 if (def.giverClass != null && !typeof(WorkGiver).IsAssignableFrom(def.giverClass))
                 {
                     continue;
@@ -339,7 +334,7 @@ namespace WealthBeyondMeasure
                     match = true;
                 }
 
-                if (!match && def.workType == WorkTypeDefOf.Cook &&
+                if (!match && def.workType == WorkTypeDefOf.Cooking &&
                     (job.def.defName.IndexOf("Cook", StringComparison.OrdinalIgnoreCase) >= 0 || job.def.defName.IndexOf("Prepare", StringComparison.OrdinalIgnoreCase) >= 0))
                 {
                     match = true;

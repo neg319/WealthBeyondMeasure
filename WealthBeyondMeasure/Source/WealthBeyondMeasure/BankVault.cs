@@ -105,6 +105,12 @@ namespace WealthBeyondMeasure
             base.Destroy(mode);
         }
 
+
+        public CellRect GetVaultRect()
+        {
+            return GenAdj.OccupiedRect(Position, Rotation, def.Size);
+        }
+
         private void RemoveFireFromVault()
         {
             if (Map == null)
@@ -112,7 +118,7 @@ namespace WealthBeyondMeasure
                 return;
             }
 
-            foreach (IntVec3 cell in OccupiedRect())
+            foreach (IntVec3 cell in GetVaultRect().Cells)
             {
                 List<Thing> things = Map.thingGrid?.ThingsListAtFast(cell);
                 if (things == null)
@@ -138,7 +144,7 @@ namespace WealthBeyondMeasure
             }
 
             List<Thing> toMove = new List<Thing>();
-            foreach (IntVec3 cell in OccupiedRect())
+            foreach (IntVec3 cell in GetVaultRect().Cells)
             {
                 List<Thing> things = Map.thingGrid?.ThingsListAtFast(cell);
                 if (things == null)
@@ -390,7 +396,7 @@ namespace WealthBeyondMeasure
                 return preferredCell;
             }
 
-            List<IntVec3> cells = vault.OccupiedRect().Cells.ToList();
+            List<IntVec3> cells = vault.GetVaultRect().Cells.ToList();
             if (cells.Count == 0)
             {
                 return vault.Position;
