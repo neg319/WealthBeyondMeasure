@@ -31,7 +31,7 @@ namespace WealthBeyondMeasure
             }
         }
 
-        public override void Tick()
+        protected override void Tick()
         {
             base.Tick();
             if (Find.TickManager == null || Find.TickManager.TicksGame % 250 != 0)

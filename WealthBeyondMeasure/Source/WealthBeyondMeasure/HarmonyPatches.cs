@@ -292,7 +292,7 @@ namespace WealthBeyondMeasure
     [HarmonyPatch(typeof(Thing), nameof(Thing.TakeDamage))]
     public static class Patch_Thing_TakeDamage_BankProtection
     {
-        public static bool Prefix(Thing __instance, ref DamageResult __result)
+        public static bool Prefix(Thing __instance, ref DamageWorker.DamageResult __result)
         {
             if (__instance == null)
             {
@@ -301,7 +301,7 @@ namespace WealthBeyondMeasure
 
             if (__instance is Building_BankVault || BankVaultUtility.IsBankSilver(__instance))
             {
-                __result = new DamageResult();
+                __result = new DamageWorker.DamageResult();
                 return false;
             }
 
