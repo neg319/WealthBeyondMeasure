@@ -334,7 +334,11 @@ namespace WealthBeyondMeasure
                     match = true;
                 }
 
-                if (!match && def.workType == WorkTypeDefOf.Cooking &&
+                bool isCookingWorkType = def.workType != null &&
+                    (string.Equals(def.workType.defName, "Cooking", StringComparison.OrdinalIgnoreCase) ||
+                     string.Equals(def.workType.defName, "Cook", StringComparison.OrdinalIgnoreCase));
+
+                if (!match && isCookingWorkType &&
                     (job.def.defName.IndexOf("Cook", StringComparison.OrdinalIgnoreCase) >= 0 || job.def.defName.IndexOf("Prepare", StringComparison.OrdinalIgnoreCase) >= 0))
                 {
                     match = true;
