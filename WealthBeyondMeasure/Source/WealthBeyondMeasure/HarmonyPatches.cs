@@ -43,8 +43,7 @@ namespace WealthBeyondMeasure
             };
 
             string extra = "\n" + string.Join("\n", lines);
-            __result = string.IsNullOrEmpty(__result) ? extra.TrimStart('
-') : __result + extra;
+            __result = string.IsNullOrEmpty(__result) ? extra.TrimStart('\n') : __result + extra;
         }
     }
 

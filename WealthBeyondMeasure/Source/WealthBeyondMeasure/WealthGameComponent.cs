@@ -369,8 +369,7 @@ namespace WealthBeyondMeasure
                 lines.Add(label + ": " + hours.ToString("0.0") + "h");
             }
 
-            return string.Join("
-", lines);
+            return string.Join("\n", lines);
         }
 
         public void AddWorkedTick(Pawn pawn, WorkTypeDef workType)
